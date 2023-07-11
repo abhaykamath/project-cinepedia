@@ -1,0 +1,18 @@
+.loader {
+  border: 0.45rem solid #141414; /* Light grey */
+  border-top: 0.45rem solid rgb(247, 197, 24); /* Blue */
+  border-bottom: 0.45rem solid rgb(247, 197, 24); /* Blue */
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  animation: spin 0.75s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

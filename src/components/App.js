@@ -65,7 +65,8 @@ function App() {
         </div>
         {show ? (
           <div>
-            {searched.length} results for "{searchBarRef.current.value}"
+            {searched.filter((movie) => movie.Poster !== "N/A").length} results
+            for "{searchBarRef.current.value}"
           </div>
         ) : (
           <div
